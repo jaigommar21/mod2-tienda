@@ -37,7 +37,7 @@ public class ProductoListarServlet extends HttpServlet {
 			
 			List<Producto> productos = productoService.listar();
 			
-			log.info("PRODUCTOS =>" + productos);
+			//log.info("PRODUCTOS =>" + productos);
 			
 			request.setAttribute("productos", productos);
 			 
