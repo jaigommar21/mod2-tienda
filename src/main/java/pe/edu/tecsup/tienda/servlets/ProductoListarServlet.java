@@ -4,6 +4,7 @@ package pe.edu.tecsup.tienda.servlets;
 import java.io.IOException;
 import java.util.List;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -39,9 +40,20 @@ public class ProductoListarServlet extends HttpServlet {
 			log.info("PRODUCTOS =>" + productos);
 			
 			request.setAttribute("productos", productos);
+			 
 			
-			request.getRequestDispatcher("/WEB-INF/jsp/producto/listar.jsp").forward(request, response);
+			request.getRequestDispatcher("/WEB-INF/jsp/producto/listar.jsp")
+			.forward(request, response);
 	        
+			/*
+			request.getRequestDispatcher("/hola2.html").forward(request, response);
+			*/
+			/*
+			RequestDispatcher rd 
+				= request.getRequestDispatcher("/hola.html");
+			rd.forward(request, response);
+			*/
+			
 		} catch (Exception e) {
 			log.error(e, e);
 			throw new ServletException(e.getMessage(), e);
