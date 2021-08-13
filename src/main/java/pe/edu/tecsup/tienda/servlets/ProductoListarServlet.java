@@ -29,10 +29,14 @@ public class ProductoListarServlet extends HttpServlet {
 	}
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		log.info("Get ProductoListarServlet");
+		
+		log.info("call doGet()");
+		
 		try {
 			
 			List<Producto> productos = productoService.listar();
+			
+			log.info("PRODUCTOS =>" + productos);
 			
 			request.setAttribute("productos", productos);
 			
