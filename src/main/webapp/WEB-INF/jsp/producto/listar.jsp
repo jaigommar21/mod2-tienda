@@ -28,7 +28,7 @@
 	                    <tr>
 	                        <th>ID</th>
 	                        <th>NOMBRE</th>
-	                        <th>CATEGORÍA</th> 
+	                        <th>CATEGOR&Iacute;A</th> 
 	                        <th>PRECIO</th>
 	                        <th>IMAGEN</th>
 	                        <th width="300"></th>
