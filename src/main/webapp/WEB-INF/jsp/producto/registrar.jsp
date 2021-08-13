@@ -35,7 +35,7 @@
 	                </div>
 	                
 	                <div class="form-group">
-	                    <label for="categorias_id">Categoría</label>
+	                    <label for="categorias_id">Categor&iacute;a</label>
 	                    <select name="categorias_id" id="categorias_id" class="form-control" required>
 	                        <option value="" selected disabled>Seleccione un valor</option>
 	                        <% for(Categoria categoria : categorias) { %>
@@ -68,7 +68,7 @@
 	                </div>
 	                
 	                <div class="form-group">
-	                    <label for="descripcion">Descripción</label>
+	                    <label for="descripcion">Descripci&oacute;n</label>
 	                    <textarea name="descripcion" id="descripcion" class="form-control ckeditor" rows="5"></textarea>
 	                </div>
 	                
