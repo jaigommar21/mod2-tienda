@@ -25,10 +25,4 @@
     	});
     </script>
     
-    <!-- ckeditor -->
-    <script src="//cdn.ckeditor.com/ckeditor5/12.3.1/classic/ckeditor.js"></script>
-    <script>
-    	$(function(){
-    		ClassicEditor.create(document.querySelector('.ckeditor'));
-    	});
-    </script>
+
