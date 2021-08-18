@@ -15,7 +15,7 @@ public class ConexionBD {
 	public static Connection obtenerConexion() throws SQLException {
 
 		Connection con = null;
-		
+		 
 		/*
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
