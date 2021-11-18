@@ -59,8 +59,8 @@
 	                        </td>
 
 	                        <td class="text-right">
-	                            <a href="#" class="btn btn-info btn-sm"><i class="fa fa-eye"></i> Mostrar</a>
-	                            <a href="#" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> Editar</a>
+	                            <a href="<%=request.getContextPath()%>/ProductoMostrarServlet?id=<c:out value="${producto.id}"/>" class="btn btn-info btn-sm"><i class="fa fa-eye"></i> Mostrar</a>
+	                            <a href="<%=request.getContextPath()%>/ProductoEditarServlet?id=<c:out value="${producto.id}"/>" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> Editar</a>
 	                            <a href="<%=request.getContextPath()%>/ProductoEliminarServlet?id=<c:out value="${producto.id}"/>"  class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Eliminar</a>
 	                        </td>
 	                    </tr>

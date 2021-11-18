@@ -38,4 +38,9 @@ public class ProductoService {
 		productoRepository.eliminar(id);
 	}
 	
+	public void actualizar(Integer id, Producto producto) throws Exception{
+		log.info("call actualizar(id: " + id + ")");
+		productoRepository.actualizar(id, producto);
+	}
+	
 }
